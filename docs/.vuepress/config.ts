@@ -30,46 +30,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: '计量',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '前端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
-        ],
+          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+          ],
       },
       {
-        text: '页面',
+        text: '计价',
         link: '/ui/',
         items: [
           { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
@@ -77,7 +45,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '技术',
+        text: '合约',
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
@@ -88,7 +56,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '更多',
+        text: '实务',
         link: '/more/',
         items: [
           { text: '学习', link: '/pages/f2a556/' },
@@ -98,41 +66,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '友情链接', link: '/friends/' },
         ],
       },
-      { text: '关于', link: '/about/' },
-      {
-        text: '计量',
-        link: '/jiliang/',
-        items: [
-          { text: '钢筋计算', link: '/pages/5444e8/' },
-        ],
-      },
-      {
-        text: '计价',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
-      {
-        text: '合约',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
-      {
-        text: '实务',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
       {
         text: '法规',
         link: '/fagui/',
@@ -140,6 +73,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '法律', link: '/falv/' },
           { text: '规范', link: '/tags/' },
           { text: '数据', link: '/archives/' },
+        ],
+      },
+      { text: '关于', link: '/about/' },
+      {
+        text: '计价',
+        link: '/archives/',
+        items: [
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '归档', link: '/archives/' },
         ],
       },
       {
