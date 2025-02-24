@@ -100,24 +100,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       { text: '关于', link: '/about/' },
       {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
-      },
-      {
-        text: '索引',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
-      {
         text: '计量',
         link: '/jiliang/',
         items: [
@@ -160,6 +142,25 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '数据', link: '/archives/' },
         ],
       },
+      {
+        text: '收藏',
+        link: '/pages/beb6c0bd8a66cea6/',
+        // items: [
+        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+        // ],
+      },
+      {
+        text: '索引',
+        link: '/archives/',
+        items: [
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '归档', link: '/archives/' },
+        ],
+      },
+      { text: '关于', link: '/about/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: 'https://s21.ax1x.com/2025/02/23/pElsvwQ.png', // 导航栏logo
@@ -217,8 +218,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar: 'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      name: 'Lin',
+      slogan: '一个浑浑噩噩的造价小透明',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -368,26 +369,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+//    [
+//      'vuepress-plugin-comment', // 评论
+//      {
+//        choosen: 'gitalk',
+//        options: {
+//          clientID: 'a6e1355287947096b88b',
+//          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+//          repo: 'blog-gitalk-comment', // GitHub 仓库
+//          owner: 'xugaoyi', // GitHub仓库所有者
+//          admin: ['xugaoyi'], // 对仓库有写权限的人
+//          // distractionFreeMode: true,
+//          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+//          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+//          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+//          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+//          body:
+//            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+//       },
+//      },
+//    ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
