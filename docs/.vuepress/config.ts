@@ -75,16 +75,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '数据', link: '/archives/' },
         ],
       },
-      { text: '关于', link: '/about/' },
-      {
-        text: '计价',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
       {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
